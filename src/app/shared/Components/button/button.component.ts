@@ -17,16 +17,16 @@ export class AppButtonComponent {
   /* text can be string */
   @Input() text: string = '';
   /* color can be 'btn-white' | 'btn-green' | 'btn-danger' */
-  @Input() color!: 'btn-white' | 'btn-green' | 'btn-danger';
+  @Input() color!: 'btn--white' | 'btn--green' | 'btn--danger';
   /* animation can only be :
   | 'btn-animated-left'
   | 'btn-animated-right'
   | 'btn-animated-top'
   | 'btn-animated-bottom'*/
   @Input() animation!:
-    | 'btn-animated-left'
-    | 'btn-animated-right'
-    | 'btn-animated-top'
-    | 'btn-animated-bottom';
+    | 'btn--animated-left'
+    | 'btn--animated-right'
+    | 'btn--animated-top'
+    | 'btn--animated-bottom';
   constructor() {}
 }

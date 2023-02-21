@@ -1,5 +1,5 @@
 @import "../styles.scss";
-/*** header class starts from here ***/
+
 .header {
   height: 95vh;
   background-image: linear-gradient(
@@ -13,58 +13,44 @@
   clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
   position: relative;
 
-  /*** logo-box class starts from here ***/
-  .logo-box {
+  &__logo-box {
     position: absolute;
     top: 40px;
     left: 40px;
-    .logo {
-      height: 35px;
-      &:hover {
-        animation: moveInRight 2s ease-in;
-      }
-    }
   }
-  /*** text-box class ends here ***/
-}
-
-/*** header class ends here ***/
-
-/*** text-box class starts from here ***/
-.text-box {
-  position: absolute;
-  left: 50%;
-  top: 40%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  .heading-primary {
-    color: $color-white;
-    text-transform: uppercase;
-    backface-visibility: hidden;
-    &-main {
-      font-size: 60px;
-      font-weight: 400;
-      display: block;
-      letter-spacing: 35px;
-      animation: moveInLeft 2s ease-in;
-
-      /*
-            animation-delay: 3s;
-            animation-iteration-count: 2;
-            */
-    }
-    &-sub {
-      font-size: 20px;
-      font-weight: 400;
-      display: block;
-      letter-spacing: 17.3px;
-      /* animation-name: moveInRight;
-            animation-duration: 2s;
-            animation-timing-function: ease-in; */
+  &__logo {
+    height: 35px;
+    &:hover {
       animation: moveInRight 2s ease-in;
-      margin-bottom: 60px;
     }
+  }
+
+  &__text-box {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    text-align: center;
   }
 }
 
-/*** text-box class ends here ***/
+.heading-primary {
+  color: $color-white;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  &--main {
+    font-size: 60px;
+    font-weight: 400;
+    display: block;
+    letter-spacing: 35px;
+    animation: moveInLeft 2s ease-in;
+  }
+  &--sub {
+    font-size: 20px;
+    font-weight: 400;
+    display: block;
+    letter-spacing: 17.3px;
+    animation: moveInRight 2s ease-in;
+    margin-bottom: 60px;
+  }
+}
